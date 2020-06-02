@@ -3683,6 +3683,7 @@ dependencies = [
  "sp-inherents",
  "sp-io",
  "sp-keyring",
+ "sp-network-privacy",
  "sp-offchain",
  "sp-runtime",
  "sp-session",
@@ -7451,6 +7452,14 @@ dependencies = [
  "sp-core",
  "sp-runtime",
  "strum",
+]
+
+[[package]]
+name = "sp-network-privacy"
+version = "1.0.0"
+dependencies = [
+ "sp-api",
+ "sp-std",
 ]
 
 [[package]]

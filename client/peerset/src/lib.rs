@@ -364,6 +364,13 @@ impl Peerset {
 				};
 			}
 		}
+
+		// periodically check
+		//query from chain
+		// check against current connection list
+
+		
+
 	}
 
 	/// Try to fill available out slots with nodes.

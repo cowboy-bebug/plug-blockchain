@@ -785,6 +785,15 @@ impl_runtime_apis! {
 		}
 	}
 
+	impl sp_network_privacy::NetworkPrivacyApi<Block> for Runtime {
+		fn reserved_nodes() -> Option<Vec<Vec<u8>>>{
+			None//Some(vec![vec![]])
+		}
+
+		fn set_reserved_nodes( nodes: Vec<Vec<i8>>){}
+	}
+
+
 	impl frame_system_rpc_runtime_api::AccountNonceApi<Block, AccountId, Index> for Runtime {
 		fn account_nonce(account: AccountId) -> Index {
 			System::account_nonce(account)
